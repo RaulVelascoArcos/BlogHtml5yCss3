@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<html lang="es">
+	<!--
+	*Codigo creador por raul velascoa arcos
+	* 30-07-2014
+	-->
+	<head manifest="manifiesto.cache">
+		<!--Initiation: title-->
+		<title>Mundo Rulas</title>
+		<!--End: title-->
+		<meta name="description" content="Mundo Rulas"/>
+		<!--Initiation: charset-->
+		<meta charset="UTF-8">
+		<!--End: charset-->
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	</head>
+	<body>
+		<!--Initiation: caja-->
+		<div id="cajaheader">
+		</div>
+		<!--End: caja-->
+		<!--Initiation:Caja Princiipal-->
+		<div id="principal" itempscope intemtype="http://www.data-vocabulary-org/Person">
+			<!--Initiation: cabeza-->
+			<header>
+				<!--Initiation: logo-->
+				<div id="logo">
+					<!--Initiation: codigo svg-->
+					<img src="imagenes/logoNuevo.png" width="100px" height="100px">
+					<!--End: codigo svg-->
+				</div>
+				<!--End: logo-->
+				<!--Initiation: Titulo wep-->
+				<h1><span itemprop="name">Contacto</span></h1>
+				<!--End: Titulo wep-->
+				<!--Initiation: navegador-->
+				<nav>
+					<!--Initiation: lista-->
+					<ul>
+						<!--Elementos-->
+						<li><a href="index.html"><canvas id="icono_inicio" width="50px" height="50px"></canvas><br/>Inicio</a></li>
+						<li><a href="noticias.html"><canvas id="icono_noticias" width="50px" height="50px"></canvas><br/>Noticias</a></li>
+						<li><a href="sobremi.html"><canvas id="icono_sobremi" width="50px" height="50px"></canvas><br/>Sobre mi</a></li>
+						<li><a href="contacto.html"><canvas id="icono_contacto" width="50px" height="50px"></canvas><br/>Contacto</a></li>
+						<!--Elementos-->
+					</ul>
+					<!--End: lista-->
+				</nav>
+				<!--End: navegador -->
+			</header>
+			<!--End: cabeza-->
+			<!--Contenedor:principal-->
+			<div id="contenido">
+				<!--Initiation: formulario-->
+				<form action="/Users/Shany/Desktop/Blogs/php/enviamail.php" method="post">
+					<!--Initiation: tabla-->
+					<table border=0>
+						<!--Initiation: Fila nombre-->
+						<tr>
+							<!--Initiation: columna-->
+							<td><p style="text-align:right; width=100%">Introduce tu nombre</p></td>
+							<!--End: columna-->
+							<!--Initiation: columna2-->
+							<td>
+								<input type="text" required/ name="nombre">
+							</td>
+							<!--End: columna2-->
+						</tr>
+						<!--End: Fila-->
+						<!--Initiation Fila email-->
+						<tr>
+							<td><p style="text-align:right; width=100%;">Introduce tu email</p></td>
+							<td>
+								<input type="email" value="ejemplo: usuario@dominio.com" name="email"/>
+							</td>
+						</tr>
+						<!--End: fila email-->
+						<!--Initiatio: fila comentario-->
+                           <tr>
+                           		<td><p style="text-align:right; width=100%">Escribe tu mensaje</p></td>
+                           		<td>
+                           			<textarea cols=40 rows=6></textarea>
+                           		</td>
+                           </tr>
+						<!--End: fila comentario-->
+						<!--Initiation: fila boton-->
+						<tr>
+							<td>
+							</td>
+							<td>
+								<input type="submit" value="Enviar" name="mensaje">
+							</td>
+						</tr>
+						<!--End: fila boton-->
+					</table>
+					<!--End: tabla-->
+				</form>
+				<!--End: formulario-->
+			</div>
+			<!--End:principal-->
+			<!--Initiation: pie pagina-->
+			<footer>
+				<h6>
+					<!--Initiacion:Targeta virtual-->
+					<div class="vcard">
+						<!--Initiation: Data personales-->
+						<div><span class="name">Raúl Velasco Arcos</span> - <span class="locality">México</span>- <span class="region">D.F</span> - <span class="postal-code">09630</span>
+						</div>
+						<!--End: Data personales-->
+						<!--Initiation: Data personales1-->
+						<div>
+							<span class="tel">55-26-35-55-94</span> - <span class="email">velascoarcosraul@hotmail.com</span>
+						</div>
+						<!--End: Data personales1-->
+					</div>
+					<!--End:Targeta virtual-->
+				</h6>
+				<!--Initiation: Contador-->
+				<script type="text/javascript">
+					if(localStorage.pagecount){
+						localStorage.pagecount=Number(localStorage.pagecount)+1;
+					}else{
+							localStorage.pagecount=1;
+					}
+					document.write("Has visitado mi pagina"+localStorage.pagecount+"veces");
+				</script>
+				<!--End: Contador-->
+				<!--Initiation: secion-->
+				<script type="text/javascript">
+					if(sessionStorage.pagecount){
+						sessionStorage.pagecount=Number(sessionStorage.pagecount)+1;
+					}else{
+						sessionStorage.pagecount=1;
+					}
+					document.write("En esta sesión, has visitado mi pagina:"+sessionStorage.pagecount+" veces");
+				</script>
+				<!--End secion-->
+			</footer>
+			<!--End: pie pagina-->
+		</div>
+		<!--Contenedor:principal-->
+	</div>
+	<!--End: Caja Principal-->
+	</body>
+</html>
+<script type="text/javascript">
+	//decrarcion de variables
+	var micolor = "#00000";// gris principal
+	var otrocolor="#B0C4DE";//gris para segundos
+	var otrocolor2="#4169E1";// azul para inicio
+	var escala = 0.5;
+	/*
+	*Icono de el boton sobre mi
+	*/
+	var c=document.getElementById("icono_sobremi");
+	var cxt=c.getContext("2d");
+	//cabeza
+	cxt.fillStyle=(micolor);
+	cxt.beginPath();
+	cxt.arc(escala*50,escala*25,escala*20,0,Math.PI*2,true);
+	cxt.closePath;
+	cxt.fill();
+	//cuerpo
+	cxt.fillStyle=(micolor);
+	cxt.beginPath();
+	cxt.arc(escala*50,escala*90,escala*40,Math.PI,Math.PI*2,false);
+	cxt.closePath;
+	cxt.fill();
+	/*
+	*Icono sobre el Contacto
+	*/
+	var c=document.getElementById("icono_contacto");
+	var cxt=c.getContext("2d");
+	//cabeza
+	cxt.fillStyle=(micolor);
+	cxt.beginPath();
+	cxt.arc(escala*50-10,escala*25,escala*20,0,Math.PI*2,true);
+	cxt.closePath;
+	cxt.fill();
+	//cuerpo
+	cxt.fillStyle=(micolor);
+	cxt.beginPath();
+	cxt.arc(escala*50-10,escala*90,escala*40,Math.PI,Math.PI*2,false);
+	cxt.closePath;
+	cxt.fill();
+		//cabeza
+	cxt.fillStyle=(otrocolor);
+	cxt.beginPath();
+	cxt.arc(escala*50+10,escala*25,escala*20,0,Math.PI*2,true);
+	cxt.closePath;
+	cxt.fill();
+	//cuerpo
+	cxt.fillStyle=(otrocolor);
+	cxt.beginPath();
+	cxt.arc(escala*50+10,escala*90,escala*40,Math.PI,Math.PI*2,false);
+	cxt.closePath;
+	cxt.fill();
+	/*
+	*Icono  de Inicio
+	cabeza*/
+	var c=document.getElementById("icono_inicio");
+	var cxt=c.getContext("2d");
+	//primer circulo
+	cxt.fillStyle=(micolor);
+	cxt.beginPath();
+	cxt.arc(escala*50,escala*50,escala*40,0,Math.PI*2,true);
+	cxt.closePath;
+	cxt.fill();
+	//tercer circulo
+	cxt.fillStyle=(otrocolor2);
+	cxt.beginPath();
+	cxt.arc(escala*50,escala*50,escala*30,0,Math.PI*2,true);
+	cxt.closePath;
+	cxt.fill();
+	//segundo circulo
+	cxt.fillStyle=(micolor);
+	cxt.beginPath();
+	cxt.arc(escala*50,escala*50,escala*20,0,Math.PI*2,true);
+	cxt.closePath;
+	cxt.fill();
+	/*Icono de noticias
+	*/
+	var c=document.getElementById("icono_noticias");
+	var cxt=c.getContext("2d");
+	//cabeza
+	cxt.fillStyle=(micolor);
+	cxt.beginPath();
+	cxt.arc(escala*50,escala*50,escala*20,0,Math.PI*2,true);
+	cxt.closePath;
+	cxt.fill();
+	//cuerpo
+	cxt.fillStyle=(micolor);
+	cxt.beginPath();
+	cxt.arc(escala*50,escala*50,escala*40,Math.PI,Math.PI*2,false);
+	cxt.closePath;
+	cxt.fill();
+
+</script>

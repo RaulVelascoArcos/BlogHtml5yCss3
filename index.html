@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html lang="es">
+	<!--
+	*Codigo creador por raul velascoa arcos
+	* 30-07-2014
+	-->
+	<head manifest="manifiesto.cache">
+		<!--Initiation: title-->
+		<title>Mundo Rulas</title>
+		<!--End: title-->
+		<meta name="description" content="Mundo Rulas"/>
+		<!--Initiation: charset-->
+		<meta charset="UTF-8">
+		<!--End: charset-->
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	</head>
+	<body>
+		<!--Initiation:Caja Princiipal-->
+		<div id="principal" itempscope intemtype="http://www.data-vocabulary-org/Person">
+			<!--Initiation: cabeza-->
+			<header>
+				<!--Initiation: logo-->
+				<div id="logo">
+					<!--Initiation: codigo svg-->
+					<img src="imagenes/logoNuevo.png" width="100px" height="100px">
+					<!--End: codigo svg-->
+				</div>
+				<!--End: logo-->
+				<!--Initiation: Titulo wep-->
+				<h1><span itemprop="name">Raúl Velasco Arcos</span></h1>
+				<!--End: Titulo wep-->
+				<!--Initiation: navegador-->
+				<nav>
+					<!--Initiation: lista-->
+					<ul>
+						<!--Elementos-->
+						<li><a href="index.html"><canvas id="icono_inicio" width="50px" height="50px"></canvas><br/>Inicio</a></li>
+						<li><a href="noticias.html"><canvas id="icono_noticias" width="50px" height="50px"></canvas><br/>Noticias</a></li>
+						<li><a href="sobremi.html"><canvas id="icono_sobremi" width="50px" height="50px"></canvas><br/>Sobre mi</a></li>
+						<li><a href="contacto.html"><canvas id="icono_contacto" width="50px" height="50px"></canvas><br/>Contacto</a></li>
+						<!--Elementos-->
+					</ul>
+					<!--End: lista-->
+				</nav>
+				<!--End: navegador -->
+			</header>
+			<!--End: cabeza-->
+			<!--Contenedor:principal-->
+			<div id="contenido">
+			<!--Initiation: Section-->
+			<section id="sobremi"><span itempro="photo"><div id="mifoto"></div></span><p>Descripcion del autor</p>
+			</section>
+			<!--End: Section-->
+			<!--Initiation: publicidad-->
+			<aside>
+				<!--Initiation: posls-->
+				<h5>Posls previos</h5>
+				<!--End: posls-->
+				<!--Initiation: Archivos pasado-->
+				<ul>
+					<li>2013-01-01 / Feliz Año Nuevo</li>
+					<li><a href=""><time>2013-01-01</time> / Titulo de articulo</a></li>
+					<li><a href=""><time>2013-01-01</time> / Titulo de articulo</a></li>
+					<li><a href=""><time>2013-01-01</time> / Titulo de articulo</a></li>
+				</ul>
+				<!--End: Archivos pasado-->
+			</aside>
+			<!--End: publicidad-->
+			<!--Initiation: secsion-->
+			<section>
+				<!--Initiation: articulo-->
+				<article >
+					<div class="personaPublico"></div>
+					<!--Initiation: tiempo-->
+					<time>2011-02-05</time>
+					<!--End: tiempo-->
+					<h3>Nueva forma de ver el mundo</h3>
+					<h4>IPHONE 6</h4>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+					<video controls="controls" width="250px" height="250px" preload="preload">
+						<source src"video/iPhone6.mp4" type="video/mpeg"/>
+						<source src="video/iPhone6.mp4" type="video/ogg"/>
+						<source src"video/iPhone6.mp4" type="video/webm"/>
+						Tu navegador no soporta video
+					</video>
+				</article>
+				<!--End: articulo-->
+				<!--Initiation: articulo-->
+				<article >
+					<div class="personaPublico"></div>
+					<!--Initiation: tiempo-->
+					<time>2011-02-05</time>
+					<!--End: tiempo-->
+					<h3></h3>
+					<h4>Subtitulo del pos</h4>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat</p>
+				</article>
+				<!--End: articulo-->
+				<!--Initiation: articulo-->
+				<article>
+					<div class="personaPublico"></div>
+					<!--Initiation: tiempo-->
+					<time>2011-02-05</time>
+					<!--End: tiempo-->
+					<h3>Titulo del post</h3>
+					<h4>Subtitulo del pos</h4>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat</p>
+				</article>
+				<!--End: articulo-->
+			</section>
+			<!--End: cabeza-->
+			</div>
+			<!--Contenedor:principal-->
+			<!--Initiation: pie pagina-->
+			<footer>
+				<h6>
+					<!--Initiacion:Targeta virtual-->
+					<div class="vcard">
+						<!--Initiation: Data personales-->
+						<div><span class="name">Raúl Velasco Arcos</span> - <span class="locality">México</span>- <span class="region">D.F</span> - <span class="postal-code">09630</span>
+						</div>
+						<!--End: Data personales-->
+						<!--Initiation: Data personales1-->
+						<div>
+							<span class="tel">55-26-35-55-94</span> - <span class="email">velascoarcosraul@hotmail.com</span>
+						</div>
+						<!--End: Data personales1-->
+					</div>
+					<!--End:Targeta virtual-->
+				</h6>
+				<!--Initiation: Contador-->
+				<script type="text/javascript">
+					if(localStorage.pagecount){
+						localStorage.pagecount=Number(localStorage.pagecount)+1;
+					}else{
+							localStorage.pagecount=1;
+					}
+					document.write("Has visitado mi pagina"+localStorage.pagecount+"veces");
+				</script>
+				<!--End: Contador-->
+				<!--Initiation: secion-->
+				<script type="text/javascript">
+					if(sessionStorage.pagecount){
+						sessionStorage.pagecount=Number(sessionStorage.pagecount)+1;
+					}else{
+						sessionStorage.pagecount=1;
+					}
+					document.write("En esta sesión, has visitado mi pagina:"+sessionStorage.pagecount+" veces");
+				</script>
+				<!--End secion-->
+			</footer>
+			<!--End: pie pagina-->
+	</div>
+	<!--End: Caja Principal-->
+	</body>
+</html>
+<script type="text/javascript" src="js/iconos.js"></script>
